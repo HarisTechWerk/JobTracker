@@ -1,11 +1,3 @@
-C:\Projects\JobTracker\obj\Debug\net9.0\JobTracker.csproj.AssemblyReference.cache
-C:\Projects\JobTracker\obj\Debug\net9.0\JobTracker.GeneratedMSBuildEditorConfig.editorconfig
-C:\Projects\JobTracker\obj\Debug\net9.0\JobTracker.AssemblyInfoInputs.cache
-C:\Projects\JobTracker\obj\Debug\net9.0\JobTracker.AssemblyInfo.cs
-C:\Projects\JobTracker\obj\Debug\net9.0\JobTracker.csproj.CoreCompileInputs.cache
-C:\Projects\JobTracker\obj\Debug\net9.0\JobTracker.MvcApplicationPartsAssemblyInfo.cs
-C:\Projects\JobTracker\obj\Debug\net9.0\JobTracker.MvcApplicationPartsAssemblyInfo.cache
-C:\Projects\JobTracker\obj\Debug\net9.0\JobTracker.sourcelink.json
 C:\Projects\JobTracker\bin\Debug\net9.0\appsettings.Development.json
 C:\Projects\JobTracker\bin\Debug\net9.0\appsettings.json
 C:\Projects\JobTracker\bin\Debug\net9.0\JobTracker.staticwebassets.endpoints.json
@@ -45,6 +37,9 @@ C:\Projects\JobTracker\bin\Debug\net9.0\Microsoft.OpenApi.dll
 C:\Projects\JobTracker\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
 C:\Projects\JobTracker\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
 C:\Projects\JobTracker\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Projects\JobTracker\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Projects\JobTracker\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Projects\JobTracker\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Projects\JobTracker\bin\Debug\net9.0\System.ClientModel.dll
 C:\Projects\JobTracker\bin\Debug\net9.0\System.CodeDom.dll
 C:\Projects\JobTracker\bin\Debug\net9.0\System.Composition.AttributedModel.dll
@@ -137,6 +132,14 @@ C:\Projects\JobTracker\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.C
 C:\Projects\JobTracker\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Projects\JobTracker\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Projects\JobTracker\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Projects\JobTracker\obj\Debug\net9.0\JobTracker.csproj.AssemblyReference.cache
+C:\Projects\JobTracker\obj\Debug\net9.0\JobTracker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\JobTracker\obj\Debug\net9.0\JobTracker.AssemblyInfoInputs.cache
+C:\Projects\JobTracker\obj\Debug\net9.0\JobTracker.AssemblyInfo.cs
+C:\Projects\JobTracker\obj\Debug\net9.0\JobTracker.csproj.CoreCompileInputs.cache
+C:\Projects\JobTracker\obj\Debug\net9.0\JobTracker.MvcApplicationPartsAssemblyInfo.cs
+C:\Projects\JobTracker\obj\Debug\net9.0\JobTracker.MvcApplicationPartsAssemblyInfo.cache
+C:\Projects\JobTracker\obj\Debug\net9.0\JobTracker.sourcelink.json
 C:\Projects\JobTracker\obj\Debug\net9.0\scopedcss\bundle\JobTracker.styles.css
 C:\Projects\JobTracker\obj\Debug\net9.0\staticwebassets.build.json
 C:\Projects\JobTracker\obj\Debug\net9.0\staticwebassets.development.json
@@ -153,3 +156,5 @@ C:\Projects\JobTracker\obj\Debug\net9.0\refint\JobTracker.dll
 C:\Projects\JobTracker\obj\Debug\net9.0\JobTracker.pdb
 C:\Projects\JobTracker\obj\Debug\net9.0\JobTracker.genruntimeconfig.cache
 C:\Projects\JobTracker\obj\Debug\net9.0\ref\JobTracker.dll
+C:\Projects\JobTracker\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Projects\JobTracker\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
