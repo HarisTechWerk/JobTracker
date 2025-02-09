@@ -28,16 +28,18 @@ namespace JobTracker.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterModel model)
         {
-            var user = new User { UserName = model.Username, Email = model.Email };
+            var user = new User { UserName = model.Username, Email = model.Email, Role = model.Role }; // Add Role
             var result = await _userManager.CreateAsync(user, model.Password);
 
             if (result.Succeeded)
-
+            {
+                await _userManager.AddToRoleAsync(user, model.Role); // Add Role in Identity
                 return Ok(new { message = "User registered successfully" });
-
+            }
             return BadRequest(result.Errors);
-        }        
-        
+
+        }
+
         // User Login
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginModel model)

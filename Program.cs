@@ -7,6 +7,21 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
+static async Task CreateRoles(IServiceProvider serviceProvider)
+{
+    var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+    string[] roleNames = { "Admin", "User" };
+
+    foreach (var roleName in roleNames)
+    {
+        var roleExist = await roleManager.RoleExistsAsync(roleName);
+        if (!roleExist)
+        {
+            await roleManager.CreateAsync(new IdentityRole(roleName));
+        }
+    }
+}
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -53,20 +68,25 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 var app = builder.Build();
 
-// Enable authentication and authorization
-app.UseAuthentication();
-app.UseAuthorization();
-
-// Enable swagger only in development
-if (app.Environment.IsDevelopment())
+using (var scope = app.Services.CreateScope())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "JobTracker API v1");
-    });
-}
+    var services = scope.ServiceProvider;
+    await CreateRoles(services); // Create roles exisitng in the database
 
+    // Enable authentication and authorization
+    app.UseAuthentication();
+    app.UseAuthorization();
+
+    // Enable swagger only in development
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseSwagger();
+        app.UseSwaggerUI(c =>
+        {
+            c.SwaggerEndpoint("/swagger/v1/swagger.json", "JobTracker API v1");
+        });
+    }
+}
 // Configure the HTTP request pipeline.
 app.UseHttpsRedirection();
 app.UseSession(); // Enable session middleware
